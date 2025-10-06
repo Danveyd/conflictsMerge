@@ -82,16 +82,6 @@
                   <brickId>ab50cec6-0e99-4e84-a207-19b34c6c488c</brickId>
                   <commentedOut>false</commentedOut>
                   <formulaList>
-                    <formula category="Y_DESTINATION">
-                      <additionalChildren/>
-                      <type>NUMBER</type>
-                      <value>0</value>
-                    </formula>
-                    <formula category="DURATION_IN_SECONDS">
-                      <additionalChildren/>
-                      <type>NUMBER</type>
-                      <value>5</value>
-                    </formula>
                     <formula category="X_DESTINATION">
                       <additionalChildren/>
                       <rightChild>
@@ -101,6 +91,16 @@
                       </rightChild>
                       <type>OPERATOR</type>
                       <value>MINUS</value>
+                    </formula>
+                    <formula category="DURATION_IN_SECONDS">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>5</value>
+                    </formula>
+                    <formula category="Y_DESTINATION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>0</value>
                     </formula>
                   </formulaList>
                 </brick>
@@ -128,16 +128,6 @@
                       <brickId>528fad3c-ce37-4a93-864e-e8cb77fce146</brickId>
                       <commentedOut>false</commentedOut>
                       <formulaList>
-                        <formula category="Y_DESTINATION">
-                          <additionalChildren/>
-                          <type>NUMBER</type>
-                          <value>0</value>
-                        </formula>
-                        <formula category="DURATION_IN_SECONDS">
-                          <additionalChildren/>
-                          <type>NUMBER</type>
-                          <value>10</value>
-                        </formula>
                         <formula category="X_DESTINATION">
                           <additionalChildren/>
                           <rightChild>
@@ -147,6 +137,16 @@
                           </rightChild>
                           <type>OPERATOR</type>
                           <value>MINUS</value>
+                        </formula>
+                        <formula category="DURATION_IN_SECONDS">
+                          <additionalChildren/>
+                          <type>NUMBER</type>
+                          <value>10</value>
+                        </formula>
+                        <formula category="Y_DESTINATION">
+                          <additionalChildren/>
+                          <type>NUMBER</type>
+                          <value>0</value>
                         </formula>
                       </formulaList>
                     </brick>
@@ -213,16 +213,6 @@
                       <brickId>c448fda5-9c8b-43fd-8eb0-69fdc63ac174</brickId>
                       <commentedOut>false</commentedOut>
                       <formulaList>
-                        <formula category="Y_DESTINATION">
-                          <additionalChildren/>
-                          <type>NUMBER</type>
-                          <value>0</value>
-                        </formula>
-                        <formula category="DURATION_IN_SECONDS">
-                          <additionalChildren/>
-                          <type>NUMBER</type>
-                          <value>10</value>
-                        </formula>
                         <formula category="X_DESTINATION">
                           <additionalChildren/>
                           <rightChild>
@@ -232,6 +222,16 @@
                           </rightChild>
                           <type>OPERATOR</type>
                           <value>MINUS</value>
+                        </formula>
+                        <formula category="DURATION_IN_SECONDS">
+                          <additionalChildren/>
+                          <type>NUMBER</type>
+                          <value>10</value>
+                        </formula>
+                        <formula category="Y_DESTINATION">
+                          <additionalChildren/>
+                          <type>NUMBER</type>
+                          <value>0</value>
                         </formula>
                       </formulaList>
                     </brick>
@@ -293,31 +293,6 @@
                       <brickId>c2349008-d9a8-45ca-accd-d382e62ddcd5</brickId>
                       <commentedOut>false</commentedOut>
                       <formulaList>
-                        <formula category="Y_DESTINATION">
-                          <additionalChildren/>
-                          <leftChild>
-                            <additionalChildren/>
-                            <rightChild>
-                              <additionalChildren/>
-                              <type>NUMBER</type>
-                              <value>200</value>
-                            </rightChild>
-                            <type>OPERATOR</type>
-                            <value>MINUS</value>
-                          </leftChild>
-                          <rightChild>
-                            <additionalChildren/>
-                            <type>NUMBER</type>
-                            <value>200</value>
-                          </rightChild>
-                          <type>FUNCTION</type>
-                          <value>RAND</value>
-                        </formula>
-                        <formula category="DURATION_IN_SECONDS">
-                          <additionalChildren/>
-                          <type>NUMBER</type>
-                          <value>1</value>
-                        </formula>
                         <formula category="X_DESTINATION">
                           <additionalChildren/>
                           <leftChild>
@@ -334,6 +309,31 @@
                             <additionalChildren/>
                             <type>NUMBER</type>
                             <value>300</value>
+                          </rightChild>
+                          <type>FUNCTION</type>
+                          <value>RAND</value>
+                        </formula>
+                        <formula category="DURATION_IN_SECONDS">
+                          <additionalChildren/>
+                          <type>NUMBER</type>
+                          <value>1</value>
+                        </formula>
+                        <formula category="Y_DESTINATION">
+                          <additionalChildren/>
+                          <leftChild>
+                            <additionalChildren/>
+                            <rightChild>
+                              <additionalChildren/>
+                              <type>NUMBER</type>
+                              <value>200</value>
+                            </rightChild>
+                            <type>OPERATOR</type>
+                            <value>MINUS</value>
+                          </leftChild>
+                          <rightChild>
+                            <additionalChildren/>
+                            <type>NUMBER</type>
+                            <value>200</value>
                           </rightChild>
                           <type>FUNCTION</type>
                           <value>RAND</value>
@@ -359,7 +359,7 @@
                         <formula category="TIME_TO_WAIT_IN_SECONDS">
                           <additionalChildren/>
                           <type>NUMBER</type>
-                          <value>0.3</value>
+                          <value>0.2</value>
                         </formula>
                       </formulaList>
                     </brick>
@@ -375,6 +375,17 @@
             </script>
             <script type="WhenScript" posX="0.0" posY="0.0">
               <brickList>
+                <brick type="WaitBrick">
+                  <brickId>e893671c-9215-47e9-91da-6e181f940c73</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="TIME_TO_WAIT_IN_SECONDS">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>1.0</value>
+                    </formula>
+                  </formulaList>
+                </brick>
                 <brick type="PlaySoundBrick">
                   <brickId>145aae2c-0d28-423b-baea-645313ff0db7</brickId>
                   <commentedOut>false</commentedOut>
