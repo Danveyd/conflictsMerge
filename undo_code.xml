@@ -69,7 +69,7 @@
                     <formula category="X_POSITION">
                       <additionalChildren/>
                       <type>NUMBER</type>
-                      <value>0</value>
+                      <value>100</value>
                     </formula>
                     <formula category="Y_POSITION">
                       <additionalChildren/>
